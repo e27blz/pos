@@ -1,9 +1,4 @@
-<?php
-echo "<ptr>";
-print_r($_POST);
-echo "</ptr>";
-exit();
- 
+<?php 
 session_start();
         if(isset($_POST['mem_username'])){
         //connection
@@ -57,6 +52,4 @@ session_start();
         }else{
              Header("Location: login.php"); //user & mem_password incorrect back to login again
         }
-?>
-
 ?>
